@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'fileutils'
+
+print 'Enter slug for the new presentation: '
+slug = gets.chomp
+
+FileUtils.mkdir_p(slug)
+FileUtils.cp(Dir['template/*'], slug)
+
+`cd #{slug} && make setup`

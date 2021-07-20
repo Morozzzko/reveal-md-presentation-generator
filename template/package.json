@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "present": "reveal-md index.md",
+    "build-pdf": "reveal-md index.md --print index.pdf"
+  },
+  "dependencies": {
+    "reveal-md": "^5.1.2"
+  }
+}
